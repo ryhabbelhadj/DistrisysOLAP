@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="19340132-42a2-43a1-8718-d2133ab5bcea" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Distrisys</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Facture</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="cfc48ca3-58b5-4b41-b5fb-13b503164b4c">
+          <ID>Fact Facture</ID>
+          <Name>Fact Facture</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8baf7c21-0002-4d8f-b30c-44a05412d061">
+            <DataSourceViewID>Distrisys DW</DataSourceViewID>
+            <TableID>dbo_FactFacture</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Facture Entete</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="bf5af745-c351-44c7-a732-2da8645617bb">
+          <ID>Facture Entete</ID>
+          <Name>Facture Entete</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="05396f41-6b1e-454b-b953-158e1c774bc0">
+            <DataSourceViewID>Distrisys DW</DataSourceViewID>
+            <TableID>dbo_FactureEntete</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Bilan Commande Client</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="04da1338-8945-4608-9ea3-6a5f3a4b7052">
+          <ID>Fact Bilan Commande Client</ID>
+          <Name>Fact Bilan Commande Client</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4273748e-0b81-4414-b8d7-38458652eb6b">
+            <DataSourceViewID>Distrisys DW</DataSourceViewID>
+            <TableID>dbo_FactBilanCommandeClient</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Budget Vente</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="1c7f2a2d-ad02-43ea-a5ca-42d7644ab762">
+          <ID>Fact Budget Vente</ID>
+          <Name>Fact Budget Vente</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cb27ec18-17fe-4b19-bd33-b4f8cff4af41">
+            <DataSourceViewID>Distrisys DW</DataSourceViewID>
+            <TableID>dbo_FactBudgetVente</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
